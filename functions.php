@@ -112,6 +112,16 @@ function scanIons($title, $data){
 				echo "<li style='margin: 0px; margin-top: 5px;'>1 F<sup>-</sup></li>";
 				break;
 			}
+			if ($compound_raw == "FeBr3"){ // wolfram alpha doesn't know oxidation states for FeBr3, doing it manually
+				$atoms[] = "Fe"; $atoms[] = "Br";
+				$ions[0] = "Fe<sup>3+</sup>";
+				$ions[1] = "Br<sup>-</sup>";
+				$ion_quantity["Fe"] = 1;
+				$ion_quantity["Br"] = 3;
+				echo "<li style='margin: 0px; margin-top: -10px;'>1 Fe<sup>3+</sup></li>";
+				echo "<li style='margin: 0px; margin-top: 5px;'>3 Br<sup>-</sup></li>";
+				break;
+			}
 			
 			$charge = strrev(str_replace("1", "", $data[1])); // remove 1 from charge, so '-1' becomes '-'; reverse string, so '-2' becomes '2-'
 			$atom = explode(" ", $data[0])[0];

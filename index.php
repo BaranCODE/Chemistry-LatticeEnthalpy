@@ -25,8 +25,14 @@ $engine = new WolframAlphaEngine($appID);
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,900">
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+<body>
 
-<body><br>
+<div style="position: absolute; right: 20px;">
+<a href="https://github.com/BaranCODE/Chemistry-LatticeEnthalpy" style="text-decoration: none; color: black;"><img src="./images/github.png" alt="" style="float: left; margin-top: 15px; margin-right: 5px;">
+<h4>GitHub</h4></a>
+</div>
+
+<br>
 <div class="title">
 <h1>Lattice&nbsp;&nbsp;Enthalpy&nbsp;&nbsp;Calculator</h1><h3>By&nbsp;&nbsp;BaranCODE</h3>
 </div>

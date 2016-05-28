@@ -3,8 +3,8 @@
 * Smart Lattice Enthalpy Calculator
 * By BaranCODE
 ***************************************/
-//ini_set('display_errors', 1);
-$appID = '3Y4A8Q-3HEP8963JG';
+
+$appID = 'WOLFRAM-ALPHA-APP-ID';
 
 include './wa_wrapper/WolframAlphaEngine.php';
 include './data.php';
@@ -14,8 +14,7 @@ include './queryThread.php';
 
 $engine = new WolframAlphaEngine($appID);
 
-// ADD POPUP DEFINITIONS
-// ADD CYCLE IMAGE
+// TODO: ADD POPUP DEFINITIONS
 ?>
 
 <html>

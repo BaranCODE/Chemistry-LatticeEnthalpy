@@ -1,0 +1,22 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+.container {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #8c8c8c;
+	border-radius: 5px;
+	background-color: #ececec;
+	padding: 40px;
+}
+.title {
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+}
+.subtitle{
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	text-align: center;
+}

@@ -4,7 +4,7 @@
 * By BaranCODE
 ***************************************/
 
-$appID = 'WOLFRAM-ALPHA-APP-ID';
+include './app_id.php'; // The WolframAlpha app ID must be placed in this file, in a variable called $appID
 
 include './wa_wrapper/WolframAlphaEngine.php';
 include './data.php';
@@ -14,7 +14,7 @@ include './queryThread.php';
 
 $engine = new WolframAlphaEngine($appID);
 
-// TODO: ADD POPUP DEFINITIONS
+// TODO: POPUP DEFINITIONS
 ?>
 
 <html>
@@ -49,8 +49,9 @@ Enter a solid ionic compound:&nbsp;&nbsp;
 $queryIsSet = isset($_REQUEST['q']);
 if ($queryIsSet) echo $_REQUEST['q'];
 ?>
-">&nbsp;&nbsp; <input type="submit" name="Search" value="Search">
+">&nbsp;&nbsp; <input type="submit" name="Search" value="Search" onclick="document.getElementById('loading_box').innerHTML = '<h3>Please wait...</h3>';">
 </form>
+<div id="loading_box"></div>
 <br>
 <img src="./images/bornhaber.png" alt="">
 

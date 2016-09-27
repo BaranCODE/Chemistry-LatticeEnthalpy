@@ -4,7 +4,7 @@
 * By BaranCODE
 ***************************************/
 
-include './app_id.php'; // The WolframAlpha app ID must be placed in this file, in a variable called $appID
+include '../wolfram_app_id.php'; // The WolframAlpha app ID must be placed in this file, in a variable called $appID
 
 include './wa_wrapper/WolframAlphaEngine.php';
 include './data.php';
